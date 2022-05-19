@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Memory Game!</title>
+  <link rel="stylesheet" href="memory-game.css"/>
+</head>
+<body>
+  <h1>Memory Game!</h1>
+  <hr>
+  <div>
+    <h2 id="congrats">You Won in <span id="final-score"></span> Moves!</h2>
+    <h2 id="best-score-hdr">Best Score: <span id="best-score"></span></h2>
+  </div>
+  <div id="form-div">
+    <form>
+      <label>Choose Amount of Colors between 2 and 16</label>
+      <input type="number" min="2" max="16" placeholder="" id="num-colors">
+      <button type="submit">Start Game</button>
+    </form>
+  </div>
+  <br>
+  <div id="game"></div>
+  <hr>
+  <div id="scores-div">
+    <div>
+      <h2>Pairs Left</h2>
+      <h2 id="pairs-count">10</h2>
+    </div>
+    <div>
+      <button id="restart-btn">Play Again!</button>
+    </div>
+    <div>
+      <h2>Moves</h2>
+      <h2 id="turn-count">0</h2>
+    </div>
+  </div>
+  <script src="memory-game.js"></script>
+</body>
+</html>
